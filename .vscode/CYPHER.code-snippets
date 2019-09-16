@@ -1,0 +1,43 @@
+{
+	"Regular Match": {
+		"scope": "cypher",
+		"prefix": "match",
+		"body": [
+			"MATCH ($1) RETURN ID($1), $1 LIMIT 1000;"
+		],
+		"description": "MATCH clause"
+	},
+	"Relationship between two nodes by id": {
+		"scope": "cypher",
+		"prefix": "linkid",
+		"body": [
+			"MATCH (n), (m)",
+			"WHERE ID(n) = $1 AND ID(m) = $2",
+			"CREATE (n)-[r:$3]->(m)",
+			"RETURN n, m"
+		],
+		"description": "MATCH and create a relationship by ID"
+	},
+	"Relationship between two nodes": {
+		"scope": "cypher",
+		"prefix": "link",
+		"body": [
+			"MATCH (n:$1), (m:$2)",
+			"WHERE n.$3 = '$4' AND m.$5 = '$6'",
+			"CREATE (n)-[r:$7]->(m)",
+			"RETURN n, m"
+		],
+		"description": "MATCH and create a relationship"
+	},
+	"Delete all duplicated relationships": {
+		"scope": "cypher",
+		"prefix": "dedupe",
+		"body": [
+			"start r=relationship(*)",
+			"match (s)-[r]->(e)",
+			"with s,e,type(r) as typ, tail(collect(r)) as coll",
+			"foreach(x in coll | delete x)"
+		],
+		"description": "Dedupe relationships"
+	},
+}

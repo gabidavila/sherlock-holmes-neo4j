@@ -1,0 +1,42 @@
+labels(n),n
+[Informant],{name:Sir Jasper Meeks}
+[Informant],{name:H.R. Murray}
+[Place],{name:Scotland Yard}
+[Informant],{name:Disraeli O'brian}
+[Place],{name:Somerset House}
+[Address],{location:38 EC}
+[Address],{location:22 SW}
+[Address],{location:36 EC}
+[Address],{location:30 EC}
+[Address],{location:8 SW}
+[Place],{name:Carlton House}
+[Informant],{name:Inspector Lestrade}
+[Informant],{name:Gregson}
+[Place],{name:Raven & Rat}
+[Place],{name:Parsons & Sons}
+[Address],{location:52 EC}
+[Address],{location:35 EC}
+[Address],{location:5 SW}
+[Address],{location:42 NW}
+[Informant],{name:Edward Hall}
+[Informant],{name:Porky Shinwell}
+[Informant],{name:Fred Porlock}
+[Informant],{name:Henry Ellis}
+[Informant],{name:Quintin Hogg}
+[Informant],{name:Mycroft Holmes}
+[Informant],{name:Langdale Pike}
+[Place],{name:Central Carriage Depot}
+[Place],{name:Lomax}
+[Informant],{name:Sherlock Holmes}
+[Place],{name:Saint Bartholomew's Hospital}
+[Place],{name:Office of National Archives}
+[Place],{name:Old Bailey}
+[Address],{location:100 SW}
+[Address],{location:13 SW}
+[Address],{location:14 WC}
+[Address],{location:17 WC}
+[Address],{location:18 NW}
+[Address],{location:2 SW}
+[Address],{location:5 WC}
+[Place],{name:London Times}
+[Place],{name:Police Gazette}
