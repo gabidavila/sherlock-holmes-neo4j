@@ -12,7 +12,7 @@ Run:
 
 ```bash
 docker run --publish=7474:7474 --publish=7687:7687 \
---volume=/path/to/sherlock-holmes-neo4j/data:/data neo4j
+--volume=/path/to/sherlock-holmes-neo4j/data:/data neo4j:3.5.27
 ```
 
 The neo4j browser will be available at <http://localhost:7474>
